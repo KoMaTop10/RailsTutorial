@@ -5,9 +5,9 @@ services:
     build:
       context: .
       args:
-        VARIANT: '3.1-bullseye'
-        BUNDLER_VERSION: '2.3.14'
-        RAILS_VERSIONS: '7.0.3'
+        VARIANT: '3.2-bullseye'
+        BUNDLER_VERSION: '2.4.12'
+        RAILS_VERSIONS: '7.0.4.3'
         NODE_VERSION: '16'
     environment:
       BINDING: 0.0.0.0
