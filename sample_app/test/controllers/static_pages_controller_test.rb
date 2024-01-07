@@ -17,7 +17,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test 'should_get_home' do
     get static_pages_home_url
     assert_response :success
-    assert_select 'title', "Home | #{@base_title}"
+    assert_select "title", "Ruby on Rails Tutorial Sample App"
   end
 
   test 'should_get_help' do
