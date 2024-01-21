@@ -33,11 +33,11 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
       assert_response :see_other
       assert_redirected_to users_url
     end
+  end
 
     test 'index as non-admin' do 
-       log_in_as @user
-       get users_path
-       assert_select 'a', text: 'delete', count: 0
+        log_in_as @user
+        get users_path
+        assert_select 'a', text: 'delete', count: 0
     end
-  end
 end
